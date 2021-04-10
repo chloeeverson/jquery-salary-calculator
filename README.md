@@ -1,9 +1,11 @@
-# Project Name
+# JQUERY SALARY CALCULATOR
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+Duration: 4 hours
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+Created an application that collects and displays employee information including: employee first name, last name, ID number, job title, and annual salary upon submission. Salaries are added upon submission to report monthly costs. If monthly cost is above $20000, total cost will display a red background. Employees may be deleted from display but will not be deleted from monthly cost.
+
+
+
