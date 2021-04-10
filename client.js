@@ -51,7 +51,7 @@ function addEmployee() {
     //display employees function
     displayEmployee();
     //calculate total monthly cost
-
+    calculateTotalMonthly();
     
 } //end addEmployee
 
@@ -66,7 +66,7 @@ function displayEmployee() {
                 <td>${worker.lastName}</td>
                 <td>${worker.ID}</td>
                 <td>${worker.jobTitle}</td>
-                <td>${worker.annualSalary}</td>
+                <td>$${worker.annualSalary}</td>
                 <td>
                     <button class="delete">Delete</button>
                 </td>
@@ -76,3 +76,24 @@ function displayEmployee() {
        
 
 }//end displayEmployee
+
+function calculateTotalMonthly() {
+    //set total cost variable to zero
+    let totalCost = 0
+    //loop through array and add all annual salary properties
+    //set total cost = to total sum of salaries
+    for (let i=0; i<staff.length; i++){
+        totalCost += Number(staff[i].annualSalary);
+    }
+    //set variable = to totalcost id in html
+    let el = $('.totalCostOut')
+    //empty input so not concatenating each time total
+    el.empty();
+    //when over 20000 - make total cost red background
+    if (totalCost > 20000){
+        el.append(`<span class="redZone">${totalCost}</span>`)
+    } else {
+        el.append(`<span class="okZone">${totalCost}</span>`)
+    }
+
+}//end calculateTotalMonthly
