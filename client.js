@@ -83,7 +83,7 @@ function calculateTotalMonthly() {
     //loop through array and add all annual salary properties
     //set total cost = to total sum of salaries
     for (let i=0; i<staff.length; i++){
-        totalCost += Number(staff[i].annualSalary);
+        totalCost += Number((staff[i].annualSalary/12));
     }
     //set variable = to totalcost id in html
     let el = $('.totalCostOut')
