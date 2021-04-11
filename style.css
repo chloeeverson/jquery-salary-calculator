@@ -1,16 +1,36 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #a3afe4;
+    color: #23395B;
+}
+
+header, main {
+    padding: 10px;
+}
+
+header {
+    background-color: #FFFD98;
+}
+
 .redZone {
     background-color: red;
+    padding: 5px;
 }
 
 table {
-    width: 80%;
-    border: 2px solid black;
+    width: 50%;
+    border: 2px solid #23395B;
+    border-collapse: collapse;
 }
 
 th {
-    background-color: orange;
+    background-color: #59C9A5;
 }
 
 table, tr, td {
-    border: 2px solid black;
+    border-bottom: 2px solid #23395B;
+    background-color: #B9E3C6;
+    text-align: center;
+    color: #23395B
 }
